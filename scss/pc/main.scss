@@ -322,6 +322,39 @@
     }
   }
 }
+  .header-basic {
+    position: relative;
+    width: 100%;
+    height: 557px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: black;
+    &.auth {
+      height: 300px;
+    }
+    .container {
+      margin-top: 175px;
+      strong {
+        color: #fff;
+        font-family: $font;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.96px;
+        text-transform: capitalize;
+      }
+      span {
+        color: #fff;
+        font-family: $font;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+      }
+    }
+  }
   #footer {
     position: relative;
     padding: 60px 0px 18px 0px;

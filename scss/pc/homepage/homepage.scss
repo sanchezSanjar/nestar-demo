@@ -1,5 +1,3 @@
-@import "../../variables";
-
 #pc-wrap {
   .home-page {
     position: relative;
@@ -62,6 +60,14 @@
                 cursor: pointer;
               }
               .swiper-trend-prev {
+                margin-right: 20px;
+                cursor: pointer;
+              }
+              .swiper-top-next {
+                margin-left: 20px;
+                cursor: pointer;
+              }
+              .swiper-top-prev {
                 margin-right: 20px;
                 cursor: pointer;
               }
@@ -137,7 +143,7 @@
               width: auto;
               height: auto;
               display: flex;
-              margin: 10px 0px 0px 10px;
+              margin: 10px 0 0 10px;
             }
           }
           .trend-card-box {
@@ -158,12 +164,11 @@
               background-size: cover;
               border-radius: 12px 12px 0px 0px;
               cursor: pointer;
-
-              .div {
+              div {
                 position: absolute;
                 padding: 8px 12px;
-                left: 20px;
-                bottom: 20px;
+                left: 12px;
+                bottom: 12px;
                 border-radius: 6px;
                 background: #fff;
                 color: #181a20;
@@ -174,98 +179,98 @@
                 line-height: normal;
               }
             }
-          }
-          .info {
-            padding: 20px 22px 17px;
-            display: flex;
-            flex-direction: column;
-            box-sizing: border-box;
-            border-radius: 0px 0px 12px 12px;
-            border: 1px solid rgba(196, 196, 196, 0.71);
-            border-top: none;
-            background: #fff;
-            box-shadow: 0px 1px 4px 0px rgba(24, 26, 32, 0.07);
-            .title {
-              overflow: hidden;
-              color: #181a20;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              font-family: $font;
-              font-size: 15px;
-              font-style: normal;
-              font-weight: 600;
-              line-height: normal;
-              text-transform: capitalize;
-              cursor: pointer;
-            }
-            .desc {
-              margin-top: 5px;
-              overflow: hidden;
-              color: #717171;
-              font-family: $font;
-              font-size: 13px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: normal;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-            }
-            .options {
-              margin-top: 15px;
+            .info {
+              padding: 20px 22px 17px;
               display: flex;
-              flex-direction: row;
-              justify-content: space-between;
-              div {
+              flex-direction: column;
+              box-sizing: border-box;
+              border-radius: 0px 0px 12px 12px;
+              border: 1px solid rgba(196, 196, 196, 0.71);
+              border-top: none;
+              background: #fff;
+              box-shadow: 0px 1px 4px 0px rgba(24, 26, 32, 0.07);
+              .title {
+                overflow: hidden;
+                color: #181a20;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-family: $font;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-transform: capitalize;
+                cursor: pointer;
+              }
+              .desc {
+                margin-top: 5px;
+                overflow: hidden;
+                color: #717171;
+                font-family: $font;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+              .options {
+                margin-top: 15px;
                 display: flex;
                 flex-direction: row;
-                img {
-                  margin-right: 5px;
-                  width: 17px;
-                  height: 17px;
+                justify-content: space-between;
+                div {
+                  display: flex;
+                  flex-direction: row;
+                  img {
+                    margin-right: 5px;
+                    width: 17px;
+                    height: 17px;
+                  }
+                  span {
+                    color: #181a20;
+                    font-family: $font;
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                  }
                 }
-                span {
+              }
+              .bott {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                p {
                   color: #181a20;
                   font-family: $font;
                   font-size: 13px;
                   font-style: normal;
                   font-weight: 400;
                   line-height: normal;
+                  text-transform: capitalize;
                 }
-              }
-            }
-            .bott {
-              display: flex;
-              flex-direction: row;
-              justify-content: space-between;
-              align-items: center;
-              p {
-                color: #181a20;
-                font-family: $font;
-                font-size: 13px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
-                text-transform: capitalize;
-              }
-              button {
-                margin-left: 7px;
-                width: 16px;
-                height: 16px;
-                box-sizing: border-box;
-              }
-              .view-like-box {
-                display: flex;
-                flex-direction: row;
-                gap: 7px;
-                align-items: center;
-                .view-cnt {
-                  color: #717171;
-                  font-family: $font;
-                  font-size: 13px;
-                  font-style: normal;
-                  font-weight: 400;
-                  line-height: normal;
-                  text-overflow: ellipsis;
+                button {
+                  margin-left: 7px;
+                  width: 16px;
+                  height: 16px;
+                  box-sizing: border-box;
+                }
+                .view-like-box {
+                  display: flex;
+                  flex-direction: row;
+                  gap: 7px;
+                  align-items: center;
+                  .view-cnt {
+                    color: #717171;
+                    font-family: $font;
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    text-overflow: ellipsis;
+                  }
                 }
               }
             }
@@ -273,7 +278,6 @@
         }
       }
     }
-
     .popular-properties {
       padding: 132px 0px 94px;
       width: 100%;
@@ -293,7 +297,7 @@
             display: flex;
             flex-direction: column;
             span {
-              color: 0#181a20;
+              color: #181a20;
               font-family: $font;
               font-size: 34px;
               font-style: normal;
@@ -370,7 +374,7 @@
               flex-direction: row;
               button {
                 border-radius: 6px;
-                background: Orgba(255, 255, 255, 0.07);
+                background: rgba(255, 255, 255, 0.07);
                 color: #ffffff;
                 font-family: $font;
                 font-size: 14px;
@@ -395,7 +399,6 @@
             }
           }
         }
-
         .card-box {
           margin-top: 34px;
           width: 100%;
@@ -408,7 +411,6 @@
             height: 425px;
             display: flex;
             flex-direction: row;
-
             .popular-property-slide {
               width: auto;
               height: auto;
@@ -422,7 +424,9 @@
             height: 425px;
             display: flex;
             flex-direction: column;
-            transition: transform 0.3s;
+            transition:
+              transform 0.3s,
+              opacity 0.3s;
             &:hover {
               opacity: 1;
               transform: scale(1.05);
@@ -461,7 +465,6 @@
               div.price {
                 position: absolute;
                 padding: 8px 12px;
-
                 left: 20px;
                 bottom: 20px;
                 border-radius: 6px;
@@ -483,7 +486,7 @@
               border: 1px solid rgba(196, 196, 196, 0.71);
               border-top: none;
               background: #fff;
-              box-shadow: 0px 1px 4px 0px Orgba(24, 26, 32, 0.07);
+              box-shadow: 0px 1px 4px 0px rgba(24, 26, 32, 0.07);
               .title {
                 overflow: hidden;
                 color: #181a20;
@@ -497,7 +500,6 @@
                 text-transform: capitalize;
                 cursor: pointer;
               }
-
               .desc {
                 margin-top: 5px;
                 overflow: hidden;
@@ -573,8 +575,10 @@
           }
         }
       }
+      .pagination-box {
+        /* 575-591. satırlar arası içerik hâlâ gizli */
+      }
     }
-
     .video-frame {
       width: 100%;
       height: 678px;
@@ -582,7 +586,6 @@
       transform: perspective(0px);
       box-shadow: -3px 0px 20px 14px #34343480;
     }
-
     .top-properties {
       padding: 108px 0px 76px;
       width: 100%;
@@ -634,6 +637,14 @@
               align-items: center;
               .swiper-pagination-bullet.swiper-pagination-bullet-active {
                 background: #000000;
+              }
+              .swiper-trend-next {
+                margin-left: 20px;
+                cursor: pointer;
+              }
+              .swiper-trend-prev {
+                margin-right: 20px;
+                cursor: pointer;
               }
               .swiper-top-next {
                 margin-left: 20px;
@@ -695,12 +706,10 @@
           }
         }
         .card-box {
-          margin-top: 34px;
-          width: 100%;
-          height: auto;
+          position: relative;
+          margin-top: 64px;
           display: flex;
           flex-direction: row;
-          justify-content: space-between;
           .top-property-swiper {
             width: 100%;
             height: 400px;
@@ -710,7 +719,7 @@
               width: auto;
               height: auto;
               display: flex;
-              margin: 10px 0 10px 10px;
+              margin: 10px 0 0 10px;
             }
           }
           .top-card-box {
@@ -731,12 +740,11 @@
               background-size: cover;
               border-radius: 12px 12px 0px 0px;
               cursor: pointer;
-
-              .divcard {
+              div {
                 position: absolute;
                 padding: 8px 12px;
-                left: 20px;
-                bottom: 20px;
+                left: 12px;
+                bottom: 12px;
                 border-radius: 6px;
                 background: #fff;
                 color: #181a20;
@@ -747,98 +755,98 @@
                 line-height: normal;
               }
             }
-          }
-          .info {
-            padding: 20px 22px 17px;
-            display: flex;
-            flex-direction: column;
-            box-sizing: border-box;
-            border-radius: 0px 0px 12px 12px;
-            border: 1px solid rgba(196, 196, 196, 0.71);
-            border-top: none;
-            background: #fff;
-            box-shadow: 0px 1px 4px 0px rgba(24, 26, 32, 0.07);
-            .title {
-              overflow: hidden;
-              color: #181a20;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-              font-family: $font;
-              font-size: 15px;
-              font-style: normal;
-              font-weight: 600;
-              line-height: normal;
-              text-transform: capitalize;
-              cursor: pointer;
-            }
-            .desc {
-              margin-top: 5px;
-              overflow: hidden;
-              color: #717171;
-              font-family: $font;
-              font-size: 13px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: normal;
-              text-overflow: ellipsis;
-              white-space: nowrap;
-            }
-            .options {
-              margin-top: 15px;
+            .info {
+              padding: 20px 22px 17px;
               display: flex;
-              flex-direction: row;
-              justify-content: space-between;
-              div {
+              flex-direction: column;
+              box-sizing: border-box;
+              border-radius: 0px 0px 12px 12px;
+              border: 1px solid rgba(196, 196, 196, 0.71);
+              border-top: none;
+              background: #fff;
+              box-shadow: 0px 1px 4px 0px rgba(24, 26, 32, 0.07);
+              .title {
+                overflow: hidden;
+                color: #181a20;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-family: $font;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-transform: capitalize;
+                cursor: pointer;
+              }
+              .desc {
+                margin-top: 5px;
+                overflow: hidden;
+                color: #717171;
+                font-family: $font;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+              .options {
+                margin-top: 15px;
                 display: flex;
                 flex-direction: row;
-                img {
-                  margin-right: 5px;
-                  width: 17px;
-                  height: 17px;
+                justify-content: space-between;
+                div {
+                  display: flex;
+                  flex-direction: row;
+                  img {
+                    margin-right: 5px;
+                    width: 17px;
+                    height: 17px;
+                  }
+                  span {
+                    color: #181a20;
+                    font-family: $font;
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                  }
                 }
-                span {
+              }
+              .bott {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                p {
                   color: #181a20;
                   font-family: $font;
                   font-size: 13px;
                   font-style: normal;
                   font-weight: 400;
                   line-height: normal;
+                  text-transform: capitalize;
                 }
-              }
-            }
-            .bott {
-              display: flex;
-              flex-direction: row;
-              justify-content: space-between;
-              align-items: center;
-              p {
-                color: #181a20;
-                font-family: $font;
-                font-size: 13px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
-                text-transform: capitalize;
-              }
-              button {
-                margin-left: 7px;
-                width: 16px;
-                height: 16px;
-                box-sizing: border-box;
-              }
-              .view-like-box {
-                display: flex;
-                flex-direction: row;
-                gap: 7px;
-                align-items: center;
-                .view-cnt {
-                  color: #717171;
-                  font-family: $font;
-                  font-size: 13px;
-                  font-style: normal;
-                  font-weight: 400;
-                  line-height: normal;
-                  text-overflow: ellipsis;
+                button {
+                  margin-left: 7px;
+                  width: 16px;
+                  height: 16px;
+                  box-sizing: border-box;
+                }
+                .view-like-box {
+                  display: flex;
+                  flex-direction: row;
+                  gap: 7px;
+                  align-items: center;
+                  .view-cnt {
+                    color: #717171;
+                    font-family: $font;
+                    font-size: 13px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    text-overflow: ellipsis;
+                  }
                 }
               }
             }
@@ -846,16 +854,18 @@
         }
       }
     }
-
     .top-agents {
-      padding: 108px 0px 76px;
+      position: relative;
+      padding: 153px 0px 135px;
       width: 100%;
-      height: 697px;
+      height: 722px;
       display: flex;
       flex-direction: row;
       background: #f6f6f6;
       .container {
+        position: relative;
         flex-direction: column;
+        align-items: center;
         .info-box {
           width: 100%;
           display: flex;
@@ -863,29 +873,60 @@
           justify-content: space-between;
           .left {
             display: flex;
-            width: 400px;
-            height: auto;
             flex-direction: column;
-            justify-content: center;
-            gap: 10px;
-            align-items: flex-start;
             span {
               color: #181a20;
-              font-size: 34px;
-              font-weight: 500;
               font-family: $font;
+              font-size: 34px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 150%;
+              letter-spacing: -0.646px;
               text-transform: capitalize;
+              &.white {
+                color: #ffffff;
+              }
             }
             p {
               color: #181a20;
+              font-family: $font;
               font-size: 14px;
+              font-style: normal;
               font-weight: 400;
+              line-height: 26px;
+              &.white {
+                color: #ffffff;
+              }
             }
           }
           .right {
             display: flex;
             flex-direction: row;
             align-items: flex-end;
+            .pagination-box {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              .swiper-pagination-bullet.swiper-pagination-bullet-active {
+                background: #000000;
+              }
+              .swiper-trend-next {
+                margin-left: 20px;
+                cursor: pointer;
+              }
+              .swiper-trend-prev {
+                margin-right: 20px;
+                cursor: pointer;
+              }
+              .swiper-top-next {
+                margin-left: 20px;
+                cursor: pointer;
+              }
+              .swiper-top-prev {
+                margin-right: 20px;
+                cursor: pointer;
+              }
+            }
             .more-box {
               display: flex;
               flex-direction: row;
@@ -893,8 +934,11 @@
               align-items: center;
               span {
                 color: #181a20;
+                font-family: $font;
                 font-size: 15px;
+                font-style: normal;
                 font-weight: 600;
+                line-height: normal;
                 text-transform: capitalize;
               }
               img {
@@ -903,28 +947,53 @@
                 height: 16px;
               }
             }
+            .btn-box {
+              display: flex;
+              flex-direction: row;
+              button {
+                border-radius: 6px;
+                background: rgba(255, 255, 255, 0.07);
+                color: #ffffff;
+                font-family: $font;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 28px;
+                text-transform: capitalize;
+                &:first-child {
+                  margin-right: 20px;
+                }
+                &.active {
+                  border: 1px solid #181a20;
+                  background: #fff;
+                  color: #181a20;
+                  font-family: $font;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: 28px;
+                }
+              }
+            }
           }
         }
-
         .wrapper {
-          margin-top: 83px;
           width: 100%;
-          height: auto;
+          margin-top: 83px;
           display: flex;
           flex-direction: row;
           align-items: center;
           justify-content: space-between;
           .switch-btn {
-            width: 50px;
-            height: 50px;
+            width: 53px;
+            height: 53px;
             display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 50%;
             background: #ffffff;
-            filter: drop-shadow(0px 10px 35px rgba(3, 7, 23, 0.1));
+            filter: drop-shadow(0px 10px 35px rgba(5, 16, 54, 0.1));
             cursor: pointer;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             svg {
               width: 14px;
               height: 14px;
@@ -947,48 +1016,40 @@
                 width: auto;
                 height: auto;
                 display: flex;
-                .top-agent-card {
-                  width: 205px;
-                  height: 280px;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  justify-content: center;
-                  .card-img {
-                    width: 209px;
-                    height: 209px;
-                    border-radius: 50%;
-                    cursor: pointer;
-                  }
-
-                  .agent-name {
-                    margin-top: 10px;
-                    strong {
-                      color: #181a20;
-                      text-align: center;
-                      font-size: 18px;
-                      font-family: $font;
-                      font-style: normal;
-                      font-weight: 600;
-                      line-height: normal;
-                      text-transform: capitalize;
-                      cursor: pointer;
-                    }
-                  }
-
-                  .agent-details {
-                    font-size: 14px;
-                    margin-top: 3px;
-                    text-align: center;
-                    font-family: $font;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                    text-transform: capitalize;
-                    cursor: pointer;
-                    color: #888888;
-                  }
-                }
+              }
+            }
+            .top-agent-card {
+              width: 205px;
+              height: 280px;
+              display: flex;
+              flex-direction: column;
+              img {
+                width: 209px;
+                height: 209px;
+                border-radius: 50%;
+                cursor: pointer;
+                object-fit: cover;
+              }
+              strong {
+                margin-top: 20px;
+                color: #181a20;
+                text-align: center;
+                font-family: $font;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-transform: capitalize;
+                cursor: pointer;
+              }
+              span {
+                color: #181a20;
+                text-align: center;
+                font-family: $font;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;
               }
             }
           }
